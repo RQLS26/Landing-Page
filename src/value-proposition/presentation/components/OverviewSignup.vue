@@ -259,9 +259,26 @@ onMounted(() => {
 }
 
 .pricing-card--enterprise {
-  background: #fff;
-  border-color: #9fb4ef;
-  box-shadow: 0 16px 34px rgba(103, 152, 238, 0.18);
+  background: #97acec;
+  border-color: #97acec;
+  box-shadow: 0 16px 34px rgba(103, 152, 238, 0.28);
+  color: #fff;
+}
+
+.pricing-card--enterprise .pricing-card__name {
+  color: #fff;
+}
+
+.pricing-card--enterprise .pricing-card__desc {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.pricing-card--enterprise .pricing-card__price strong {
+  color: #fff;
+}
+
+.pricing-card--enterprise .pricing-card__price span {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .pricing-card__name {
@@ -318,19 +335,24 @@ onMounted(() => {
 }
 
 .pricing-card__cta--filled {
-  background: rgba(159, 180, 239, 0.12);
-  color: #7d96ea;
-  border: 1px solid #dfe7fb;
+  background: #fff;
+  color: #97acec;
+  border: 1px solid #fff;
+  box-shadow: 0 4px 12px rgba(30, 30, 30, 0.1);
 }
 
 .pricing-card__cta--filled:hover {
-  background: rgba(159, 180, 239, 0.22);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .pricing-card__divider {
   border: none;
   border-top: 1px solid #eff0f6;
   margin: 24px 0;
+}
+
+.pricing-card--enterprise .pricing-card__divider {
+  border-top-color: rgba(255, 255, 255, 0.3);
 }
 
 .pricing-card__features-title {
@@ -340,6 +362,10 @@ onMounted(() => {
   text-align: left;
   color: var(--color-text-primary);
   margin-bottom: 12px;
+}
+
+.pricing-card--enterprise .pricing-card__features-title {
+  color: #fff;
 }
 
 .pricing-card__features {
@@ -354,6 +380,10 @@ onMounted(() => {
   font-size: 14px;
   line-height: 1.5;
   color: rgba(30, 30, 30, 0.55);
+}
+
+.pricing-card--enterprise .pricing-card__features li {
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .overview-rail__item--active {
