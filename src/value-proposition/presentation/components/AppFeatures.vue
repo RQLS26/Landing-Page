@@ -31,7 +31,6 @@ onMounted(() => {
     </header>
 
     <div class="feature-diagram">
-      <!-- 01 · Monitoring -->
       <article class="feature-step feature-step--monitoring" data-reveal="scale-in" style="--reveal-delay: 0ms">
         <span class="feature-step__eyebrow feature-step__eyebrow--blue">01 · Monitoring</span>
         <h3 class="feature-step__title">Construction Requirements</h3>
@@ -46,7 +45,6 @@ onMounted(() => {
         <p class="feature-note__copy">Export you data history by asse, site, or period</p>
       </div>
 
-      <!-- 02 · Records -->
       <article class="feature-step feature-step--records" data-reveal="slide-stack">
         <span class="feature-step__eyebrow feature-step__eyebrow--orange">02 · Records</span>
         <h3 class="feature-step__title">History and Quotes</h3>
@@ -61,7 +59,6 @@ onMounted(() => {
         <p class="feature-note__copy">Download records by material type or supplier</p>
       </div>
 
-      <!-- 03 · Alerts -->
       <article class="feature-step feature-step--alerts" data-reveal="slide-stack">
         <span class="feature-step__eyebrow feature-step__eyebrow--red">03 · Alerts</span>
         <h3 class="feature-step__title">Control and Approvals</h3>
@@ -76,7 +73,6 @@ onMounted(() => {
         <p class="feature-note__copy">Download alert and incident logs instantly</p>
       </div>
 
-      <!-- 04 · Compliance -->
       <article class="feature-step feature-step--compliance" data-reveal="slide-stack">
         <span class="feature-step__eyebrow feature-step__eyebrow--green">04 · Compliance</span>
         <h3 class="feature-step__title">Audit and Transparency</h3>

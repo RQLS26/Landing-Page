@@ -62,5 +62,4 @@ const { t } = useI18n()
 </template>
 
 <style scoped>
-/* Scoped styles are intentionally left empty since global styles handle the layout. */
 </style>

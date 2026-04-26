@@ -16,7 +16,6 @@ const { t } = useI18n()
         <img class="hero__centerpiece-art" src="/assets/images/hero/centerpiece.png" alt="">
       </div>
 
-      <!-- Materials Budget with gauge meter -->
       <article class="dash-card dash-card--balance">
         <header class="dash-card__title">Materials Budget</header>
         <div class="dash-card__head">

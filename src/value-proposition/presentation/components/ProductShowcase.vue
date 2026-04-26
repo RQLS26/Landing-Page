@@ -24,7 +24,6 @@ onMounted(() => {
     <h2 id="about-product-title" class="visually-hidden">BuildLine platform showcase</h2>
 
     <div class="product-showcase__stack">
-      <!-- Panel 1: Budget Dashboard (image left, text right) -->
       <article class="showcase-panel showcase-panel--thermal" data-reveal style="--reveal-delay: 0ms">
         <div class="showcase-panel__visual showcase-panel__visual--thermal" aria-hidden="true">
           <img
@@ -68,7 +67,6 @@ onMounted(() => {
         </div>
       </article>
 
-      <!-- Panel 2: Alerts (text left, image right — reversed) -->
       <article class="showcase-panel showcase-panel--alerts showcase-panel--reverse" data-reveal style="--reveal-delay: 100ms">
         <div class="showcase-panel__copy showcase-panel__copy--red">
           <h3 class="showcase-panel__title">
@@ -112,7 +110,6 @@ onMounted(() => {
         </div>
       </article>
 
-      <!-- Panel 3: Cost History (image left, text right) -->
       <article class="showcase-panel showcase-panel--history" data-reveal style="--reveal-delay: 100ms">
         <div class="showcase-panel__visual showcase-panel__visual--history" aria-hidden="true">
           <img
@@ -155,7 +152,6 @@ onMounted(() => {
         </div>
       </article>
 
-      <!-- Panel 4: Multi-site (text left, image right — reversed) -->
       <article class="showcase-panel showcase-panel--sites showcase-panel--reverse" data-reveal style="--reveal-delay: 100ms">
         <div class="showcase-panel__copy showcase-panel__copy--blue">
           <h3 class="showcase-panel__title">

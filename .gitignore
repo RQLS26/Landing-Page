@@ -1,12 +1,35 @@
-node_modules
-dist
-dist-ssr
-*.local
-.env.local
-.env.*.local
+# Logs
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor folders
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Build outputs
+.tempmediaStorage
+.gemini
 _reference_repo
+_reference_repo_2
+
+# OS metadata
+Thumbs.db
+ehthumbs.db
+Desktop.ini

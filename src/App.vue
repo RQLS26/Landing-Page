@@ -31,6 +31,5 @@ import SiteFooter from './shared/presentation/components/SiteFooter.vue'
 }
 
 main {
-  /* Offset removed to fix white gap */
 }
 </style>

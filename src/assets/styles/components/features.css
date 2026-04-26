@@ -1,8 +1,6 @@
-/* ==========================================================================
-   Features section
-   ========================================================================== */
+/* Features section */
 
-/* Scroll reveal base state (JS toggles .is-revealed on viewport in/out) */
+/* Scroll reveal */
 [data-reveal] {
   opacity: 0;
   transform: translateY(28px);
@@ -16,7 +14,6 @@
 [data-reveal="fade-right"] { transform: translateX(32px); }
 [data-reveal="scale-in"]   { transform: scale(0.94); }
 
-/* Stacked slide: card emerges from the position of the previous card */
 .feature-step[data-reveal="slide-stack"] {
   opacity: 0;
   transform: translate(-98%, calc(-1 * var(--feature-step-shift-y))) scale(0.9);
