@@ -1,0 +1,16 @@
+{
+  "nav": {
+    "product": "Product",
+    "solutions": "Solutions",
+    "pricing": "Pricing",
+    "resources": "Resources",
+    "signIn": "Sign In",
+    "requestDemo": "Request demo"
+  },
+  "hero": {
+    "title": "The end of logistical chaos in construction",
+    "subtitle": "BuildLine gives you absolute control over your projects, suppliers, invoices, and payments in one place. Never lose time looking for information in emails and WhatsApp.",
+    "emailPlaceholder": "Work email",
+    "startFree": "Start free"
+  }
+}

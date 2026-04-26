@@ -1,0 +1,16 @@
+{
+  "nav": {
+    "product": "Producto",
+    "solutions": "Soluciones",
+    "pricing": "Precios",
+    "resources": "Recursos",
+    "signIn": "Iniciar Sesión",
+    "requestDemo": "Solicitar Demo"
+  },
+  "hero": {
+    "title": "El fin del caos logístico en la construcción",
+    "subtitle": "BuildLine te da control absoluto sobre tus proyectos, proveedores, facturas y pagos en un solo lugar. Nunca más pierdas tiempo buscando información en correos y WhatsApp.",
+    "emailPlaceholder": "Correo de trabajo",
+    "startFree": "Empezar gratis"
+  }
+}

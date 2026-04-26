@@ -1,0 +1,27 @@
+<script setup>
+import TheHeader from './shared/presentation/components/TheHeader.vue'
+import TheHero from './value-proposition/presentation/components/TheHero.vue'
+</script>
+
+<template>
+  <div class="landing-page">
+    <TheHeader />
+    <main>
+      <TheHero />
+      <!-- We will add more sections here -->
+    </main>
+  </div>
+</template>
+
+<style scoped>
+.landing-page {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  padding-top: 80px; /* offset for fixed header */
+}
+</style>
