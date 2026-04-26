@@ -17,19 +17,17 @@ const { t } = useI18n()
       </button>
 
       <ul class="navbar__menu">
-        <li><a href="#home" class="nav-pill">{{ t('nav.product') }}</a></li>
-        <li><a href="#features" class="nav-pill">{{ t('nav.solutions') }}</a></li>
-        <li><a href="#pricing" class="nav-pill">{{ t('nav.pricing') }}</a></li>
-        <li><a href="#resources" class="nav-pill">{{ t('nav.resources') }}</a></li>
+        <li><a href="#products" class="nav-pill">Products</a></li>
+        <li><a href="#solutions" class="nav-pill">Solutions</a></li>
+        <li><a href="#community" class="nav-pill">Community</a></li>
+        <li><a href="#resources" class="nav-pill">Resources</a></li>
+        <li><a href="#pricing" class="nav-pill">Pricing</a></li>
+        <li><a href="#contact" class="nav-pill">Contact</a></li>
       </ul>
 
       <div class="navbar__actions">
-        <div class="lang-switcher" role="group" aria-label="Select language">
-          <button type="button" class="lang-switcher__option is-active" @click="$i18n.locale = 'en'" aria-pressed="true">EN</button>
-          <button type="button" class="lang-switcher__option" @click="$i18n.locale = 'es'" aria-pressed="false">ES</button>
-        </div>
-        <a href="#signin" class="btn btn--ghost">{{ t('nav.signIn') }}</a>
-        <a href="#contact" class="btn btn--primary">{{ t('nav.requestDemo') }}</a>
+        <a href="#signin" class="btn btn--ghost">Sign in</a>
+        <a href="#register" class="btn btn--primary">Register now</a>
       </div>
 
       <div class="navbar__mobile-menu" id="mobile-nav-panel" hidden>

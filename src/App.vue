@@ -22,6 +22,6 @@ import TheHero from './value-proposition/presentation/components/TheHero.vue'
 }
 
 main {
-  padding-top: 80px; /* offset for fixed header */
+  /* Offset removed to fix white gap */
 }
 </style>

@@ -48,7 +48,7 @@
 .hero__visual {
   position: relative;
   width: 100%;
-  max-width: 1040px;
+  max-width: 1180px;
   height: 720px;
   margin: 28px auto 0;
 }
@@ -648,8 +648,8 @@
    ========================================================================== */
 
 .dash-card--report {
-  left: 318px;
-  top: -10px;
+  left: 140px;
+  top: 660px;
   width: 540px;
   display: grid;
   grid-template-columns: 1.05fr 1.3fr 0.95fr auto;

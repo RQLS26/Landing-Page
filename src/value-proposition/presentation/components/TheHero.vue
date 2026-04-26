@@ -7,12 +7,8 @@ const { t } = useI18n()
 <template>
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero__text">
-      <h1 id="hero-title">
-        {{ t('hero.title') }}
-      </h1>
-      <p class="hero__subtitle">
-        {{ t('hero.subtitle') }}
-      </p>
+      <h1 id="hero-title">The end of logistical chaos in construction</h1>
+      <p class="hero__subtitle">Digitize your construction company's supply chain. Eliminate cost overruns through real-time data centralization and complete traceability.</p>
     </div>
 
     <div class="hero__visual" aria-hidden="true">
@@ -20,12 +16,12 @@ const { t } = useI18n()
         <img class="hero__centerpiece-art" src="/assets/images/hero/centerpiece.png" alt="">
       </div>
 
-      <!-- Current Balance with gauge meter -->
+      <!-- Materials Budget with gauge meter -->
       <article class="dash-card dash-card--balance">
-        <header class="dash-card__title">Current Balance</header>
+        <header class="dash-card__title">Materials Budget</header>
         <div class="dash-card__head">
           <div class="dash-card__head-left">
-            <strong class="dash-card__amount">$45,000</strong>
+            <strong class="dash-card__amount">$20,000</strong>
             <button type="button" class="icon-btn" aria-label="Edit">
               <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><use href="/assets/icons/hero-edit.svg#icon"></use></svg>
             </button>
@@ -37,7 +33,7 @@ const { t } = useI18n()
             <div class="dash-metric">
               <svg class="dash-metric__icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><use href="/assets/icons/hero-achievement.svg#icon"></use></svg>
               <div>
-                <span class="dash-metric__label">Target Achieved</span>
+                <span class="dash-metric__label">Cost Overrun Avoided: 15%</span>
                 <strong class="dash-metric__value">$12,500</strong>
               </div>
             </div>
@@ -56,20 +52,20 @@ const { t } = useI18n()
               <strong>12K</strong>
               <span>$20k</span>
             </div>
-            <p class="gauge__label">Target vs Achievement</p>
+            <p class="gauge__label">Supply Efficiency</p>
           </div>
         </div>
       </article>
 
       <!-- Storage Conditions -->
       <article class="dash-card dash-card--storage">
-        <header class="dash-card__title">Project Status</header>
+        <header class="dash-card__title">Storage Conditions</header>
         <ul class="bar-list">
           <li>
             <span class="bar-list__icon bar-list__icon--orange" aria-hidden="true">
               <svg viewBox="0 0 16 16" width="11" height="11"><use href="/assets/icons/hero-storage-cold.svg#icon"></use></svg>
             </span>
-            <span class="bar-list__label">In Progress</span>
+            <span class="bar-list__label">Cement</span>
             <span class="bar"><span class="bar__fill bar__fill--orange" style="width:52%"></span></span>
             <span class="bar-list__value">52%</span>
           </li>
@@ -77,7 +73,7 @@ const { t } = useI18n()
             <span class="bar-list__icon bar-list__icon--green" aria-hidden="true">
               <svg viewBox="0 0 16 16" width="11" height="11"><use href="/assets/icons/hero-storage-frozen.svg#icon"></use></svg>
             </span>
-            <span class="bar-list__label">Completed</span>
+            <span class="bar-list__label">Steel</span>
             <span class="bar"><span class="bar__fill bar__fill--green" style="width:21%"></span></span>
             <span class="bar-list__value">21%</span>
           </li>
@@ -85,7 +81,7 @@ const { t } = useI18n()
             <span class="bar-list__icon bar-list__icon--blue" aria-hidden="true">
               <svg viewBox="0 0 16 16" width="11" height="11"><use href="/assets/icons/hero-storage-ambient.svg#icon"></use></svg>
             </span>
-            <span class="bar-list__label">Delayed</span>
+            <span class="bar-list__label">Ambient Storage</span>
             <span class="bar"><span class="bar__fill bar__fill--blue" style="width:74%"></span></span>
             <span class="bar-list__value">74%</span>
           </li>
@@ -124,9 +120,9 @@ const { t } = useI18n()
         </ul>
       </article>
 
-      <!-- Historical Temp -->
+      <!-- Historical Data -->
       <article class="dash-card dash-card--temp">
-        <header class="dash-card__title">Cost Savings</header>
+        <header class="dash-card__title">Historical Data</header>
         <strong class="dash-card__big">+34%</strong>
         <svg class="dash-card__spark" viewBox="0 0 120 40" preserveAspectRatio="none" aria-hidden="true"><use href="/assets/icons/hero-sparkline.svg#icon"></use></svg>
       </article>
@@ -137,22 +133,22 @@ const { t } = useI18n()
         <div class="quality-circles" aria-hidden="true">
           <div class="quality-circle quality-circle--orange">
             <span class="quality-circle__pct">85%</span>
-            <span class="quality-circle__name">Structure</span>
+            <span class="quality-circle__name">Efficiency</span>
           </div>
           <div class="quality-circle quality-circle--blue">
             <span class="quality-circle__pct">92%</span>
-            <span class="quality-circle__name">Finishes</span>
+            <span class="quality-circle__name">Packaging</span>
           </div>
           <div class="quality-circle quality-circle--purple">
             <span class="quality-circle__pct">85%</span>
-            <span class="quality-circle__name">Safety</span>
+            <span class="quality-circle__name">Savings</span>
           </div>
         </div>
       </article>
 
       <!-- 12°C Optimal -->
       <article class="dash-card dash-card--optimal">
-        <strong class="dash-card__big">100%</strong>
+        <strong class="dash-card__big">12:00</strong>
         <span class="dash-card__date">12/20/20</span>
         <svg class="dash-card__icon" viewBox="0 0 32 32" width="32" height="26" aria-hidden="true"><use href="/assets/icons/hero-optimal.svg#icon"></use></svg>
         <span class="dash-card__tag">Optimal</span>
@@ -200,8 +196,8 @@ const { t } = useI18n()
 
     <div class="hero__cta">
       <label class="visually-hidden" for="hero-email">Your email</label>
-      <input id="hero-email" type="email" class="input" :placeholder="t('hero.emailPlaceholder')">
-      <a href="#demo" class="btn btn--primary">{{ t('hero.startFree') }}</a>
+      <input id="hero-email" type="email" class="input" placeholder="Mail">
+      <a href="#demo" class="btn btn--primary">Try a demo</a>
     </div>
   </section>
 </template>
