@@ -8,7 +8,7 @@ const { t } = useI18n()
   <header class="site-header" role="banner">
     <nav class="navbar" aria-label="Main navigation">
       <a href="#home" class="navbar__logo" aria-label="BuildLine home">
-        <img src="/assets/images/logo/coldtrace-logo.png" alt="BuildLine logo" width="228" height="72">
+        <img src="/assets/images/logo/buildline-logo1.png" alt="BuildLine logo" width="228" height="72">
       </a>
 
       <button type="button" class="navbar__more" aria-label="Open navigation menu" aria-controls="mobile-nav-panel" aria-expanded="false">
