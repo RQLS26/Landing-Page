@@ -5,7 +5,25 @@ import { ref, onMounted } from 'vue'
 const { t } = useI18n()
 const activeTab = ref('register')
 
+import { watch } from 'vue'
+watch(activeTab, (newTab) => {
+  const footer = document.querySelector('.site-footer')
+  if (footer) {
+    if (newTab === 'pricing') {
+      footer.classList.add('site-footer--pricing')
+    } else {
+      footer.classList.remove('site-footer--pricing')
+    }
+  }
+})
+
 onMounted(() => {
+  // Sync footer class on mount
+  const footer = document.querySelector('.site-footer')
+  if (footer && activeTab.value === 'pricing') {
+    footer.classList.add('site-footer--pricing')
+  }
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {

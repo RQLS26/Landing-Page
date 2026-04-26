@@ -81,7 +81,7 @@ body.motion-enabled .signup-card:hover {
   color: rgba(30, 30, 30, 0.58);
 }
 
-.signup-field + .signup-field {
+.signup-field+.signup-field {
   margin-top: 24px;
 }
 
@@ -219,10 +219,15 @@ body.motion-enabled .signup-card:hover {
 .site-footer {
   position: relative;
   z-index: 1;
-  margin-top: -228px;
-  padding: 312px 32px 78px;
+  margin-top: -150px; /* Default for Register */
+  padding: 280px 32px 78px;
   background: #57585d;
   color: #fff;
+  transition: margin-top 0.3s ease;
+}
+
+.site-footer--pricing {
+  margin-top: -190px;
 }
 
 .site-footer__grid {
@@ -236,8 +241,9 @@ body.motion-enabled .signup-card:hover {
 
 .site-footer__brand {
   display: flex;
-  align-items: center;
-  gap: 28px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
 }
 
 .site-footer__logo {
@@ -288,10 +294,12 @@ body.motion-enabled .signup-card:hover {
 }
 
 @keyframes signup-card-float {
+
   0%,
   100% {
     transform: translate3d(0, 0, 0);
   }
+
   50% {
     transform: translate3d(0, -12px, 0);
   }
