@@ -2,6 +2,7 @@
 import TheHeader from './shared/presentation/components/TheHeader.vue'
 import TheHero from './value-proposition/presentation/components/TheHero.vue'
 import AppFeatures from './value-proposition/presentation/components/AppFeatures.vue'
+import ProductShowcase from './value-proposition/presentation/components/ProductShowcase.vue'
 </script>
 
 <template>
@@ -10,6 +11,7 @@ import AppFeatures from './value-proposition/presentation/components/AppFeatures
     <main>
       <TheHero />
       <AppFeatures />
+      <ProductShowcase />
       <!-- We will add more sections here -->
     </main>
   </div>
