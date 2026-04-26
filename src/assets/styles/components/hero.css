@@ -455,7 +455,7 @@
 .dash-card--quality {
   right: -40px;
   top: 320px;
-  width: 220px;
+  width: 250px;
   padding: 18px 18px 18px;
   --hero-float-y: -11px;
 }
@@ -566,7 +566,7 @@
 
 .dash-card--performance {
   right: 0px;
-  top: 610px;
+  top: 640px;
   width: 160px;
   padding: 18px 20px 14px;
   --hero-float-y: -10px;
@@ -648,13 +648,13 @@
    ========================================================================== */
 
 .dash-card--report {
-  left: 180px;
-  top: 760px;
-  width: 540px;
+  left: 140px;
+  top: 720px;
+  width: 640px;
   display: grid;
-  grid-template-columns: 1.05fr 1.3fr 0.95fr auto;
+  grid-template-columns: auto 1fr auto auto;
   align-items: center;
-  gap: 14px;
+  gap: 24px;
   padding: 12px 14px 12px 18px;
   border-radius: 16px;
   --hero-float-y: -7px;
@@ -705,7 +705,7 @@
   align-items: center;
   justify-content: center;
   gap: 14px;
-  margin-top: 16px;
+  margin-top: 50px;
 }
 
 .hero__cta .input {

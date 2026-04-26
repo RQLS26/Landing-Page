@@ -17,17 +17,17 @@ const { t } = useI18n()
       </button>
 
       <ul class="navbar__menu">
-        <li><a href="#products" class="nav-pill">Products</a></li>
-        <li><a href="#solutions" class="nav-pill">Solutions</a></li>
-        <li><a href="#community" class="nav-pill">Community</a></li>
-        <li><a href="#resources" class="nav-pill">Resources</a></li>
-        <li><a href="#pricing" class="nav-pill">Pricing</a></li>
-        <li><a href="#contact" class="nav-pill">Contact</a></li>
+        <li><a href="#products" class="nav-pill nav-pill--active" style="border-radius: 999px;">Products</a></li>
+        <li><a href="#solutions" class="nav-pill nav-pill--active" style="border-radius: 999px;">Solutions</a></li>
+        <li><a href="#community" class="nav-pill" style="border-radius: 999px;">Community</a></li>
+        <li><a href="#resources" class="nav-pill" style="border-radius: 999px;">Resources</a></li>
+        <li><a href="#pricing" class="nav-pill" style="border-radius: 999px;">Pricing</a></li>
+        <li><a href="#contact" class="nav-pill" style="border-radius: 999px;">Contact</a></li>
       </ul>
 
       <div class="navbar__actions">
-        <a href="#signin" class="btn btn--ghost">Sign in</a>
-        <a href="#register" class="btn btn--primary">Register now</a>
+        <a href="#signin" class="btn" style="background-color: #E3E3E3; color: #333; border-radius: 999px; padding: 0 20px;">Sign in</a>
+        <a href="#register" class="btn btn--primary" style="border-radius: 999px;">Register now</a>
       </div>
 
       <div class="navbar__mobile-menu" id="mobile-nav-panel" hidden>
