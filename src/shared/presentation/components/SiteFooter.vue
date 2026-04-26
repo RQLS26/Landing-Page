@@ -8,7 +8,7 @@ const { t } = useI18n()
   <footer class="site-footer" role="contentinfo">
     <div class="site-footer__grid">
       <div class="site-footer__brand">
-        <img src="/assets/images/final-section/footer-brand.png" alt="BuildLine logo" class="site-footer__logo" width="248" height="84">
+        <img src="/assets/images/final-section/buildline-logo-footer.png" alt="BuildLine logo" class="site-footer__logo" width="248" height="84">
         <div class="site-footer__social" aria-label="Social links">
           <a href="#x" aria-label="X">
             <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><use href="/assets/icons/footer-x.svg#icon"></use></svg>
