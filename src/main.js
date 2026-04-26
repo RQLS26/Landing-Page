@@ -1,7 +1,18 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import i18n from './i18n'
-import './style.css'
+import './assets/styles/reset.css'
+import './assets/styles/variables.css'
+import './assets/styles/layout.css'
+import './assets/styles/main.css'
+import './assets/styles/components/header.css'
+import './assets/styles/components/hero.css'
+import './assets/styles/components/features.css'
+import './assets/styles/components/showcase.css'
+import './assets/styles/components/team.css'
+import './assets/styles/components/pricing.css'
+import './assets/styles/components/footer.css'
+import './assets/styles/responsive.css'
 
 const app = createApp(App)
 

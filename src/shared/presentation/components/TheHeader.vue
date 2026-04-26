@@ -5,108 +5,53 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <header class="header">
-    <div class="header-container">
-      <div class="logo">
-        <!-- Placeholder for BuildLine Logo -->
-        <span class="logo-text"><strong>BUILD</strong>LINE</span>
-      </div>
-      
-      <nav class="nav-links">
-        <a href="#product">{{ t('nav.product') }}</a>
-        <a href="#solutions">{{ t('nav.solutions') }}</a>
-        <a href="#pricing">{{ t('nav.pricing') }}</a>
-        <a href="#resources">{{ t('nav.resources') }}</a>
-      </nav>
+  <header class="site-header" role="banner">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#home" class="navbar__logo" aria-label="BuildLine home">
+        <img src="/assets/images/logo/coldtrace-logo.png" alt="BuildLine logo" width="228" height="72">
+      </a>
 
-      <div class="actions">
-        <button class="btn-text">{{ t('nav.signIn') }}</button>
-        <button class="btn-primary">{{ t('nav.requestDemo') }}</button>
+      <button type="button" class="navbar__more" aria-label="Open navigation menu" aria-controls="mobile-nav-panel" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><use href="/assets/icons/navbar-more.svg#icon"></use></svg>
+        <span>{{ t('nav.product') }}</span> <!-- Placeholder for 'More' text -->
+      </button>
+
+      <ul class="navbar__menu">
+        <li><a href="#home" class="nav-pill">{{ t('nav.product') }}</a></li>
+        <li><a href="#features" class="nav-pill">{{ t('nav.solutions') }}</a></li>
+        <li><a href="#pricing" class="nav-pill">{{ t('nav.pricing') }}</a></li>
+        <li><a href="#resources" class="nav-pill">{{ t('nav.resources') }}</a></li>
+      </ul>
+
+      <div class="navbar__actions">
+        <div class="lang-switcher" role="group" aria-label="Select language">
+          <button type="button" class="lang-switcher__option is-active" @click="$i18n.locale = 'en'" aria-pressed="true">EN</button>
+          <button type="button" class="lang-switcher__option" @click="$i18n.locale = 'es'" aria-pressed="false">ES</button>
+        </div>
+        <a href="#signin" class="btn btn--ghost">{{ t('nav.signIn') }}</a>
+        <a href="#contact" class="btn btn--primary">{{ t('nav.requestDemo') }}</a>
       </div>
-    </div>
+
+      <div class="navbar__mobile-menu" id="mobile-nav-panel" hidden>
+        <div class="navbar__mobile-links" aria-label="Mobile navigation">
+          <a href="#home" class="navbar__mobile-link">{{ t('nav.product') }}</a>
+          <a href="#features" class="navbar__mobile-link">{{ t('nav.solutions') }}</a>
+          <a href="#pricing" class="navbar__mobile-link">{{ t('nav.pricing') }}</a>
+          <a href="#resources" class="navbar__mobile-link">{{ t('nav.resources') }}</a>
+        </div>
+
+        <div class="navbar__mobile-language">
+          <p class="navbar__mobile-language-title">Language</p>
+          <div class="lang-switcher lang-switcher--mobile" role="group" aria-label="Select language">
+            <button type="button" class="lang-switcher__option is-active" @click="$i18n.locale = 'en'" aria-pressed="true">EN</button>
+            <button type="button" class="lang-switcher__option" @click="$i18n.locale = 'es'" aria-pressed="false">ES</button>
+          </div>
+        </div>
+      </div>
+    </nav>
   </header>
 </template>
 
 <style scoped>
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #eaeaea;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-}
-
-.header-container {
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-}
-
-.logo-text {
-  font-size: 1.5rem;
-  letter-spacing: -0.5px;
-}
-
-.logo-text strong {
-  font-weight: 800;
-}
-
-.nav-links {
-  display: flex;
-  gap: 30px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #555;
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: color 0.2s ease;
-}
-
-.nav-links a:hover {
-  color: #000;
-}
-
-.actions {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-
-.btn-text {
-  background: none;
-  border: none;
-  color: #555;
-  font-weight: 600;
-  font-size: 0.95rem;
-  padding: 8px 16px;
-}
-
-.btn-text:hover {
-  color: #000;
-}
-
-.btn-primary {
-  background-color: #4f86f7;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  padding: 10px 20px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: background-color 0.2s ease;
-}
-
-.btn-primary:hover {
-  background-color: #3b70db;
-}
+/* Scoped styles are intentionally left empty since global styles handle the layout. */
 </style>
